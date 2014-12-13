@@ -1,11 +1,16 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ScreenManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="118" Column="8" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="14" Column="17" />
       <File FileName="Assets/Scripts/ISpawnable.cs" Line="6" Column="28" />
       <File FileName="../../GitHub/SurvivalGame/survivor/Assets/Scripts/Components/repeatSprite.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/LevelBounds.cs" Line="8" Column="33" />
+      <File FileName="Assets/Scripts/goalPost.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Menu.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PlayerInGame.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PlayerNetwork.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ScreenManager.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
