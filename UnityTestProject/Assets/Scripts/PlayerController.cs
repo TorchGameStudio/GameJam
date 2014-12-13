@@ -44,12 +44,21 @@ public class PlayerController : MonoBehaviour,ISpawnable {
 				}
 				if(Mathf.Abs(rigidBody.velocity.x) < MAXSPEED)//Can't turn when going to fast or speed up
 				{
-					if(Input.GetKeyDown(KeyCode.RightArrow))
+
+					if(Input.GetKeyDown(KeyCode.RightArrow)) //Move right
 					{
+						if(transform.localScale.x < 0 )
+						{
+							flipScale();
+						}
 						rigidBody.AddForce(PUSHFORCE);
 					}
-					else if(Input.GetKeyDown(KeyCode.LeftArrow))
+					else if(Input.GetKeyDown(KeyCode.LeftArrow)) //move left
 					{
+						if(transform.localScale.x > 0 )
+						{
+							flipScale();
+						}
 						rigidBody.AddForce(-PUSHFORCE);
 					}
 				}
@@ -57,7 +66,7 @@ public class PlayerController : MonoBehaviour,ISpawnable {
 				if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow))
 				{
 					rigidBody.AddForce(JUMPFORCE);
-				}
+				}//going down
 				else if( Input.GetKeyDown(KeyCode.RightControl) || Input.GetKeyDown(KeyCode.LeftControl)  || Input.GetKeyDown(KeyCode.DownArrow))
 				{
 					rigidBody.AddForce(-JUMPFORCE/4.0f);
@@ -95,13 +104,13 @@ public class PlayerController : MonoBehaviour,ISpawnable {
 		//Debug.DrawRay(origin,-Vector2.up,Color.red,1);
 		if(hit.collider != null)
 		{
-			Debug.Log("GROUNDED " + hit.collider.gameObject.name);
+			//Debug.Log("GROUNDED " + hit.collider.gameObject.name);
 			return true;
 
 		}
 		else
 		{
-			Debug.Log("AIR TIME");
+			//Debug.Log("AIR TIME");
 			return false;
 		}
 	}
@@ -110,9 +119,19 @@ public class PlayerController : MonoBehaviour,ISpawnable {
 	/// </summary>
 	void Attack()
 	{
-		Vector3 pos = new Vector3(transform.position.x+0.5f,transform.position.y-0.5f,transform.position.z);
+		int direction;
+		if(transform.localScale.x > 0)
+		{
+			direction = 1;
+		}
+		else
+		{
+			direction = -1;
+		}
+
+		Vector3 pos = new Vector3( transform.position.x+(direction *0.5f),transform.position.y-0.5f,transform.position.z);
 		RaycastHit2D[] hit;
-		hit = Physics2D.BoxCastAll(pos,new Vector2(2.0f,4.0f),0.0f,Vector2.right);
+		hit = Physics2D.BoxCastAll(new Vector2(pos.x,pos.y),new Vector2(2.0f,4.0f),0.0f,direction * Vector2.right);
 		for(int i =0; i < hit.Length;i++)
 		{
 			PlayerController other = hit[i].collider.gameObject.GetComponent<PlayerController>() as PlayerController;
@@ -122,13 +141,17 @@ public class PlayerController : MonoBehaviour,ISpawnable {
 			}
 			if(hit[i].rigidbody != null)
 			{
-			    hit[i].rigidbody.AddForce(new Vector2(200.0f, 100.0f));
+			    hit[i].rigidbody.AddForce(new Vector2(direction * 200.0f, 100.0f));
 			}
 		}
 		//send objects/players upwards
 
-		Debug.DrawLine(pos, new Vector2(pos.x + 2.0f,pos.y + 4.0f),Color.red,1.0f);
+		//Debug.DrawLine(pos, new Vector2( pos.x + (direction*2.0f),pos.y + 4.0f),Color.red,1.0f);
 
+	}
+	void flipScale()
+	{
+		transform.localScale *= -1;
 	}
 	/// <summary>
 	/// Stunned for the specified stunTime.
