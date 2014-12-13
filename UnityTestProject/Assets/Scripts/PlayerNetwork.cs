@@ -1,9 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class PlayerNetwork : Photon.MonoBehaviour {
 	
 	PlayerController controllerScript;
+	private Vector3 correctPlayerPos = Vector3.zero; //We lerp towards this
+	private Quaternion correctPlayerRot = Quaternion.identity; //We lerp towards this
 	
 	void Awake()
 	{
@@ -13,7 +16,6 @@ public class PlayerNetwork : Photon.MonoBehaviour {
 		{
 			//MINE: local player, simply enable the local scripts
 			controllerScript.enabled = true;
-
 		}
 		else
 		{           
@@ -38,9 +40,6 @@ public class PlayerNetwork : Photon.MonoBehaviour {
 			correctPlayerRot = (Quaternion)stream.ReceiveNext();
 		}
 	}
-	
-	private Vector3 correctPlayerPos = Vector3.zero; //We lerp towards this
-	private Quaternion correctPlayerRot = Quaternion.identity; //We lerp towards this
 	
 	void Update()
 	{
