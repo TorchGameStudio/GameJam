@@ -15,7 +15,7 @@ public class goalPost : MonoBehaviour {
 	}
 	void OnCollisionEnter2D()
 	{
-		if()
+		//if()
 	}
 	// Update is called once per frame
 	void Update () {
