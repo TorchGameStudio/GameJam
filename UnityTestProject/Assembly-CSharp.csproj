@@ -46,9 +46,12 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\PlayerController.cs" />
-     <Compile Include="Assets\ScreenManager.cs" />
-     <Compile Include="Assets\goalPost.cs" />
+     <Compile Include="Assets\Scripts\GamJamCamera.cs" />
+     <Compile Include="Assets\Scripts\ISpawnable.cs" />
+     <Compile Include="Assets\Scripts\LevelBounds.cs" />
+     <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\ScreenManager.cs" />
+     <Compile Include="Assets\Scripts\goalPost.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
