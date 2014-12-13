@@ -21,8 +21,7 @@ public class PlayerController : MonoBehaviour {
 			gameObject.AddComponent<Rigidbody2D>();
 		}
 		rigidBody = this.GetComponent<Rigidbody2D>() as Rigidbody2D;
-
-
+        
 	}
 		void OnCollisionEnter2D(Collision2D collider)
 	{
