@@ -16,7 +16,7 @@ GameObject:
   - 114: {fileID: 11459826}
   m_Layer: 0
   m_Name: GamePlayer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,8 +28,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 131470}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .860000014, y: -.779999971, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1, y: 3, z: 0}
+  m_LocalScale: {x: 20, y: 20, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -39,13 +39,13 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 131470}
-  m_Mass: .25
-  m_LinearDrag: .200000003
-  m_AngularDrag: .100000001
+  m_Mass: .5
+  m_LinearDrag: .600000024
+  m_AngularDrag: .200000003
   m_GravityScale: 1
   m_FixedAngle: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
 --- !u!61 &6131470
@@ -57,7 +57,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .129999995, y: .119999997}
+  m_Size: {x: .200000003, y: .200000003}
   m_Center: {x: 0, y: 0}
 --- !u!114 &11459826
 MonoBehaviour:
@@ -70,6 +70,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1820eb4190d84033bfad3e383b3ad18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpawnPoint: {x: 0, y: 6, z: 0}
 --- !u!114 &11489042
 MonoBehaviour:
   m_ObjectHideFlags: 1
