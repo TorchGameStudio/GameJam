@@ -28,6 +28,7 @@ public class PlayerControl : MonoBehaviour,ISpawnable
 	int attackRangeX = 1;					
 	int attackRangeY = 2;
 	bool attack = false;			//Condition for if the player should attack
+	public bool isControllable = true;
 
 
 	void Awake()
@@ -58,7 +59,7 @@ public class PlayerControl : MonoBehaviour,ISpawnable
 
 	void FixedUpdate ()
 	{
-		if(!isStunned)
+		if(!isStunned && isControllable)
 		{
 			// Cache the horizontal input.
 			float h = Input.GetAxis("Horizontal");
@@ -198,18 +199,22 @@ public class PlayerControl : MonoBehaviour,ISpawnable
 			attackOrigin = new Vector3( transform.position.x-1f,transform.position.y-0.5f,transform.position.z);
 
 		}
+
 		//cast a box collider in the attack area to see if there are things that will be attacked
 		hit = Physics2D.BoxCastAll(attackOrigin,new Vector2(attackRangeX,attackRangeY),0,dir * Vector2.right);
+		Debug.DrawLine(attackOrigin,new Vector2(attackOrigin.x + attackRangeX,attackOrigin.y + attackRangeY));
 
 		//check all hit objects to see if they are a player and stun them
 		for(int i =0; i < hit.Length;i++)
 		{
-			PlayerController other = hit[i].collider.gameObject.GetComponent<PlayerController>() as PlayerController;
+			Debug.Log(hit[i].collider.gameObject.name);
+			PlayerControl other = hit[i].collider.gameObject.GetComponent<PlayerControl>() as PlayerControl;
+			//Debug.Log(other + " OTHER");
 			if(other != null)
 			{
-				other.Stun();
+				//other.Stun();
 			}
-			if(hit[i].rigidbody != null) //regardless of its a player or not, if it has a rigidbody, push them
+			if(hit[i].rigidbody != null && hit[i].transform.gameObject.GetComponent<BallNetwork>()) //regardless of its a player or not, if it has a rigidbody, push them
 			{
 				hit[i].rigidbody.AddForce(new Vector2(dir * moveForce * 2, jumpForce * 0.5f));
 			}
@@ -217,6 +222,48 @@ public class PlayerControl : MonoBehaviour,ISpawnable
 
 		
 
+	}
+
+	public void Stun()
+	{
+		Debug.Log("STUNNED " + transform.gameObject.name);
+		int dir;
+		if(facingRight)
+		{
+			dir = 1;	
+		}
+		else
+		{
+			dir = -1;
+			
+		}
+		if (rigidbody != null) 
+		{
+			rigidbody.AddForce (new Vector2 (dir * moveForce * 2, jumpForce * 0.5f));
+		}
+		StartCoroutine(Stunned(2.0f));
+	}
+	IEnumerator Stunned(float stunTime)
+	{
+		int dir;
+		if(facingRight)
+		{
+			dir = 1;	
+		}
+		else
+		{
+			dir = -1;
+			
+		}
+		rigidbody2D.AddForce(new Vector2(dir * moveForce * 2, jumpForce * 0.5f));
+		Debug.Log("UNSTUNNED " + transform.gameObject.name);
+		isStunned = true;
+		while(isStunned)//loop incase we want to do stuff later
+		{
+			yield return new WaitForSeconds(stunTime);
+			isStunned = false;
+		}
+		
 	}
 
 }

@@ -15,12 +15,12 @@ public class PlayerNetwork : Photon.MonoBehaviour {
 		if (photonView.isMine)
 		{
 			//MINE: local player, simply enable the local scripts
-			controllerScript.enabled = true;
+			controllerScript.isControllable = true;
 		}
 		else
 		{           
-			controllerScript.enabled = false;
-			rigidbody2D.isKinematic = true;
+			controllerScript.isControllable = false;
+			rigidbody2D.gravityScale = 0;
 		}
 		
 		gameObject.name = gameObject.name + photonView.viewID;
