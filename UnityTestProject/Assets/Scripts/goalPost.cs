@@ -30,7 +30,6 @@ public class goalPost : MonoBehaviour {
 //		collider2D.bounds.SetMinMax(renderer.bounds.min,renderer.bounds.max);
 
 		groundCollider = GameObject.FindGameObjectWithTag("Ground").GetComponent<Collider2D>() as Collider2D; 
-
 		groundCenter = groundCollider.transform.position;
 
 	}

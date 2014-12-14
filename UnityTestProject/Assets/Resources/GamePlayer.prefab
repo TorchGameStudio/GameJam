@@ -8,12 +8,12 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 431470}
-  - 212: {fileID: 21231470}
-  - 61: {fileID: 6131470}
+  - 114: {fileID: 11429154}
   - 50: {fileID: 5031470}
-  - 114: {fileID: 11496542}
-  - 114: {fileID: 11489042}
-  - 114: {fileID: 11459826}
+  - 61: {fileID: 6131470}
+  - 212: {fileID: 21231470}
+  - 114: {fileID: 11429156}
+  - 114: {fileID: 11429158}
   m_Layer: 0
   m_Name: GamePlayer
   m_TagString: Player
@@ -28,8 +28,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 131470}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 3, z: 0}
-  m_LocalScale: {x: 20, y: 20, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -39,11 +39,11 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 131470}
-  m_Mass: .5
-  m_LinearDrag: .600000024
-  m_AngularDrag: .200000003
-  m_GravityScale: 1
-  m_FixedAngle: 0
+  m_Mass: 2
+  m_LinearDrag: 2
+  m_AngularDrag: .0500000007
+  m_GravityScale: 7
+  m_FixedAngle: 1
   m_IsKinematic: 0
   m_Interpolate: 1
   m_SleepingMode: 1
@@ -57,9 +57,9 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .200000003, y: .200000003}
+  m_Size: {x: .150000006, y: .150000006}
   m_Center: {x: 0, y: 0}
---- !u!114 &11459826
+--- !u!114 &11429154
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -67,11 +67,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 131470}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1820eb4190d84033bfad3e383b3ad18, type: 3}
+  m_Script: {fileID: 11500000, guid: ebc51d5115ab25d4583b19d1bc929196, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnPoint: {x: 0, y: 6, z: 0}
---- !u!114 &11489042
+  facingRight: 1
+  jump: 0
+  moveForce: 750
+  maxSpeed: 15
+  jumpClips: []
+  jumpForce: 2500
+  taunts: []
+  tauntProbability: 50
+  tauntDelay: 1
+--- !u!114 &11429156
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -82,7 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b93159fb69ce944b8793f64668e73ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11496542
+--- !u!114 &11429158
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -97,12 +105,12 @@ MonoBehaviour:
   group: 0
   prefixBackup: -1
   observed: {fileID: 0}
-  synchronization: 3
+  synchronization: 1
   onSerializeTransformOption: 3
   onSerializeRigidBodyOption: 2
   ownershipTransfer: 0
   ObservedComponents:
-  - {fileID: 11489042}
+  - {fileID: 11429156}
   ObservedComponentsFoldoutOpen: 1
   viewIdField: 0
   instantiationId: -1

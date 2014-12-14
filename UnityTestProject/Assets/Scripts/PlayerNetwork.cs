@@ -4,13 +4,13 @@ using System.Collections.Generic;
 
 public class PlayerNetwork : Photon.MonoBehaviour {
 	
-	PlayerController controllerScript;
+	PlayerControl controllerScript;
 	private Vector3 correctPlayerPos = Vector3.zero; //We lerp towards this
 	private Quaternion correctPlayerRot = Quaternion.identity; //We lerp towards this
 	
 	void Awake()
 	{
-		controllerScript = GetComponent<PlayerController>();
+		controllerScript = GetComponent<PlayerControl>();
 		
 		if (photonView.isMine)
 		{
@@ -20,6 +20,7 @@ public class PlayerNetwork : Photon.MonoBehaviour {
 		else
 		{           
 			controllerScript.enabled = false;
+			rigidbody2D.isKinematic = true;
 		}
 		
 		gameObject.name = gameObject.name + photonView.viewID;
