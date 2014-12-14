@@ -322,8 +322,8 @@ TextureImporter:
         y: 814
         width: 35
         height: 35
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: GamJamSprites_19
       rect:
@@ -342,8 +342,8 @@ TextureImporter:
         y: 737
         width: 53
         height: 71
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: GamJamSprites_21
       rect:
