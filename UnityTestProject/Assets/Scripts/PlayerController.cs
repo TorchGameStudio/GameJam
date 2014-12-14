@@ -7,8 +7,8 @@ using System.Collections;
 public class PlayerController : MonoBehaviour,ISpawnable {
 	#region fields
 	Rigidbody2D rigidBody;
-	readonly Vector2 PUSHFORCE = new Vector2(200.0f,0.0f);
-	readonly Vector2 JUMPFORCE = new Vector2(0.0f, 500.0f);
+	readonly Vector2 PUSHFORCE = new Vector2(500.0f,0.0f);
+	readonly Vector2 JUMPFORCE = new Vector2(0.0f, 800.0f);
 	const float MAXSPEED = 60.0f;
 	public Vector3 SpawnPoint = new Vector3 (0.0f,6.0f,0.0f);
 	bool isStunned;
@@ -98,13 +98,13 @@ public class PlayerController : MonoBehaviour,ISpawnable {
 	bool isGrounded()
 	{
 		//use renderer to find the base of the gameobject 
-		Vector2 origin = new Vector3(transform.position.x,transform.position.y - (renderer.bounds.max.y/1.5f));
+		Vector2 origin = new Vector3(transform.position.x,transform.position.y - 2.2f); //- (renderer.bounds.max.y/8f));
 		//cast ray down for a short distance
-		RaycastHit2D hit = Physics2D.Raycast(origin,-Vector2.up,0.1f,layerMask);
-		//Debug.DrawRay(origin,-Vector2.up,Color.red,1);
+		RaycastHit2D hit = Physics2D.Raycast(origin,-Vector2.up,0.5f,layerMask);
+		Debug.DrawRay(origin,-Vector2.up,Color.red,2.0f);
 		if(hit.collider != null)
 		{
-			//Debug.Log("GROUNDED " + hit.collider.gameObject.name);
+			Debug.Log("GROUNDED " + hit.collider.gameObject.name);
 			return true;
 
 		}
@@ -146,7 +146,7 @@ public class PlayerController : MonoBehaviour,ISpawnable {
 		}
 		//send objects/players upwards
 
-		//Debug.DrawLine(pos, new Vector2( pos.x + (direction*2.0f),pos.y + 4.0f),Color.red,1.0f);
+		Debug.DrawLine(pos, new Vector2( pos.x + (direction*2.0f),pos.y + 4.0f),Color.red,1.0f);
 
 	}
 	void flipScale()

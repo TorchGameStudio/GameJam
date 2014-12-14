@@ -5,7 +5,7 @@ public class GamJamCamera : MonoBehaviour {
 	#region Fields
 	float _targetx;
 	public GameObject playerGO;
-	const float TARGETY = 12.0f;
+	 float _targetY = 12.0f;
 	const float TARGETZ = -10.0f;
 	#endregion
 	#region monobehaviours
@@ -20,7 +20,8 @@ public class GamJamCamera : MonoBehaviour {
 	void Update()
 	{
 		_targetx = playerGO.transform.position.x;
-		this.transform.position = new Vector3(_targetx,TARGETY,TARGETZ);
+		_targetY = playerGO.transform.position.y;
+		this.transform.position = new Vector3(_targetx,_targetY,TARGETZ);
 	}
 	#endregion
 }

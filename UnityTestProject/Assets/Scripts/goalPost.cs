@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class goalPost : MonoBehaviour {
 	#region fields
 	public Text scoreSpot; //The Text GameObject
-	PolygonCollider2D groundCollider;
+	Collider2D groundCollider;
 	uint score = 0;
 	const uint goalPoints = 1;
 	BoxCollider2D myCollider;
@@ -29,7 +29,7 @@ public class goalPost : MonoBehaviour {
 //		collider2D.bounds.size.Set(renderer.bounds.size.x/3,renderer.bounds.size.y,0);
 //		collider2D.bounds.SetMinMax(renderer.bounds.min,renderer.bounds.max);
 
-		groundCollider = GameObject.FindGameObjectWithTag("Ground").GetComponent<PolygonCollider2D>() as PolygonCollider2D; 
+		groundCollider = GameObject.FindGameObjectWithTag("Ground").GetComponent<Collider2D>() as Collider2D; 
 
 		groundCenter = groundCollider.transform.position;
 

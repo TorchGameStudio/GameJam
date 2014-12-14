@@ -1,0 +1,1059 @@
+fileFormatVersion: 2
+guid: 3a10685e6bd1b4d62aca8ba71e9367af
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: GamJamSprites_0
+    21300002: GamJamSprites_1
+    21300004: GamJamSprites_2
+    21300006: GamJamSprites_3
+    21300008: GamJamSprites_4
+    21300010: GamJamSprites_5
+    21300012: GamJamSprites_6
+    21300014: GamJamSprites_7
+    21300016: GamJamSprites_8
+    21300018: GamJamSprites_9
+    21300020: GamJamSprites_10
+    21300022: GamJamSprites_11
+    21300024: GamJamSprites_12
+    21300026: GamJamSprites_13
+    21300028: GamJamSprites_14
+    21300030: GamJamSprites_15
+    21300032: GamJamSprites_16
+    21300034: GamJamSprites_17
+    21300036: GamJamSprites_18
+    21300038: GamJamSprites_19
+    21300040: GamJamSprites_20
+    21300042: GamJamSprites_21
+    21300044: GamJamSprites_22
+    21300046: GamJamSprites_23
+    21300048: GamJamSprites_24
+    21300050: GamJamSprites_25
+    21300052: GamJamSprites_26
+    21300054: GamJamSprites_27
+    21300056: GamJamSprites_28
+    21300058: GamJamSprites_29
+    21300060: GamJamSprites_30
+    21300062: GamJamSprites_31
+    21300064: GamJamSprites_32
+    21300066: GamJamSprites_33
+    21300068: GamJamSprites_34
+    21300070: GamJamSprites_35
+    21300072: GamJamSprites_36
+    21300074: GamJamSprites_37
+    21300076: GamJamSprites_38
+    21300078: GamJamSprites_39
+    21300080: GamJamSprites_40
+    21300082: GamJamSprites_41
+    21300084: GamJamSprites_42
+    21300086: GamJamSprites_43
+    21300088: GamJamSprites_44
+    21300090: GamJamSprites_45
+    21300092: GamJamSprites_46
+    21300094: GamJamSprites_47
+    21300096: GamJamSprites_48
+    21300098: GamJamSprites_49
+    21300100: GamJamSprites_50
+    21300102: GamJamSprites_51
+    21300104: GamJamSprites_52
+    21300106: GamJamSprites_53
+    21300108: GamJamSprites_54
+    21300110: GamJamSprites_55
+    21300112: GamJamSprites_56
+    21300114: GamJamSprites_57
+    21300116: GamJamSprites_58
+    21300118: GamJamSprites_59
+    21300120: GamJamSprites_60
+    21300122: GamJamSprites_61
+    21300124: GamJamSprites_62
+    21300126: GamJamSprites_63
+    21300128: GamJamSprites_64
+    21300130: GamJamSprites_65
+    21300132: GamJamSprites_66
+    21300134: GamJamSprites_67
+    21300136: GamJamSprites_68
+    21300138: GamJamSprites_69
+    21300140: GamJamSprites_70
+    21300142: GamJamSprites_71
+    21300144: GamJamSprites_72
+    21300146: GamJamSprites_73
+    21300148: GamJamSprites_74
+    21300150: GamJamSprites_75
+    21300152: GamJamSprites_76
+    21300154: GamJamSprites_77
+    21300156: GamJamSprites_78
+    21300158: GamJamSprites_79
+    21300160: GamJamSprites_80
+    21300162: GamJamSprites_81
+    21300164: GamJamSprites_82
+    21300166: GamJamSprites_83
+    21300168: GamJamSprites_84
+    21300170: GamJamSprites_85
+    21300172: GamJamSprites_86
+    21300174: GamJamSprites_87
+    21300176: GamJamSprites_88
+    21300178: GamJamSprites_89
+    21300180: GamJamSprites_90
+    21300182: GamJamSprites_91
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: GamJamSprites_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 954
+        width: 70
+        height: 41
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_1
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 954
+        width: 32
+        height: 38
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_2
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 940
+        width: 96
+        height: 55
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_3
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 939
+        width: 97
+        height: 53
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_4
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 939
+        width: 98
+        height: 53
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 862
+        width: 67
+        height: 70
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_6
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 862
+        width: 67
+        height: 70
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_7
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 862
+        width: 26
+        height: 70
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_8
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 862
+        width: 67
+        height: 70
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_9
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 862
+        width: 67
+        height: 70
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_10
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 861
+        width: 65
+        height: 70
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_11
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 862
+        width: 67
+        height: 70
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_12
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 862
+        width: 67
+        height: 70
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_13
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 860
+        width: 62
+        height: 70
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 814
+        width: 35
+        height: 38
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_15
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 814
+        width: 35
+        height: 35
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_16
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 814
+        width: 35
+        height: 35
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_17
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 814
+        width: 35
+        height: 35
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_18
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 814
+        width: 35
+        height: 35
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_19
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 814
+        width: 35
+        height: 35
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_20
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 737
+        width: 53
+        height: 71
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_21
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 738
+        width: 50
+        height: 70
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_22
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 735
+        width: 107
+        height: 73
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_23
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 735
+        width: 52
+        height: 70
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_24
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 680
+        width: 53
+        height: 125
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_25
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 668
+        width: 52
+        height: 140
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_26
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 744
+        width: 51
+        height: 70
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_27
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 744
+        width: 50
+        height: 70
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_28
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 745
+        width: 57
+        height: 69
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_29
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 687
+        width: 106
+        height: 125
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_30
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 674
+        width: 54
+        height: 140
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_31
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 661
+        width: 53
+        height: 71
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_32
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 663
+        width: 52
+        height: 70
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_33
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 671
+        width: 54
+        height: 70
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_34
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 670
+        width: 54
+        height: 70
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_35
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 669
+        width: 54
+        height: 70
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_36
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 667
+        width: 52
+        height: 73
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_37
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 598
+        width: 102
+        height: 70
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_38
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 592
+        width: 70
+        height: 61
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_39
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 583
+        width: 70
+        height: 61
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_40
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 583
+        width: 53
+        height: 53
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_41
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 583
+        width: 53
+        height: 53
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_42
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 583
+        width: 53
+        height: 53
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_43
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 583
+        width: 53
+        height: 53
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_44
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 500
+        width: 50
+        height: 72
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_45
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 501
+        width: 50
+        height: 69
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_46
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 500
+        width: 53
+        height: 69
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_47
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 499
+        width: 51
+        height: 70
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_48
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 428
+        width: 104
+        height: 142
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_49
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 497
+        width: 53
+        height: 53
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_50
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 524
+        width: 53
+        height: 53
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_51
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 524
+        width: 70
+        height: 40
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_52
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 525
+        width: 70
+        height: 40
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_53
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 530
+        width: 70
+        height: 40
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_54
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 530
+        width: 70
+        height: 40
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_55
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 517
+        width: 53
+        height: 53
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 431
+        width: 53
+        height: 68
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_57
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 431
+        width: 53
+        height: 68
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_58
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 430
+        width: 53
+        height: 70
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_59
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 427
+        width: 105
+        height: 70
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_60
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 427
+        width: 56
+        height: 53
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_61
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 459
+        width: 53
+        height: 53
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_62
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 459
+        width: 56
+        height: 53
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_63
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 468
+        width: 5
+        height: 24
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_64
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 468
+        width: 5
+        height: 24
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_65
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 454
+        width: 53
+        height: 53
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_66
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 454
+        width: 53
+        height: 53
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_67
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 454
+        width: 53
+        height: 53
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_68
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 459
+        width: 53
+        height: 53
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_69
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 358
+        width: 100
+        height: 70
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_70
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 341
+        width: 70
+        height: 70
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_71
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 341
+        width: 70
+        height: 70
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_72
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 349
+        width: 70
+        height: 70
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_73
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 358
+        width: 53
+        height: 53
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_74
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 358
+        width: 53
+        height: 53
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_75
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 358
+        width: 53
+        height: 53
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_76
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 358
+        width: 36
+        height: 80
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_77
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 358
+        width: 36
+        height: 80
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_78
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 330
+        width: 36
+        height: 110
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_79
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 330
+        width: 37
+        height: 110
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_80
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 385
+        width: 53
+        height: 53
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_81
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 385
+        width: 53
+        height: 53
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_82
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 277
+        width: 56
+        height: 53
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_83
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 277
+        width: 53
+        height: 53
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_84
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 277
+        width: 53
+        height: 53
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_85
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 277
+        width: 53
+        height: 53
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_86
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 277
+        width: 56
+        height: 53
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_87
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 277
+        width: 53
+        height: 53
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_88
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 277
+        width: 53
+        height: 53
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_89
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 205
+        width: 53
+        height: 53
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_90
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 205
+        width: 53
+        height: 53
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GamJamSprites_91
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 205
+        width: 53
+        height: 53
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
