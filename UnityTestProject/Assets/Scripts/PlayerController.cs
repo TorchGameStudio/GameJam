@@ -7,9 +7,9 @@ using System.Collections;
 public class PlayerController : MonoBehaviour,ISpawnable {
 	#region fields
 	Rigidbody2D rigidBody;
-	readonly Vector2 PUSHFORCE = new Vector2(500.0f,0.0f);
+	readonly Vector2 PUSHFORCE = new Vector2(700.0f,0.0f);
 	readonly Vector2 JUMPFORCE = new Vector2(0.0f, 800.0f);
-	const float MAXSPEED = 60.0f;
+	const float MAXSPEED = 200.0f;
 	public Vector3 SpawnPoint = new Vector3 (0.0f,6.0f,0.0f);
 	bool isStunned;
 	int layerMask = 1 << 0; //gamplay layer
@@ -51,6 +51,7 @@ public class PlayerController : MonoBehaviour,ISpawnable {
 						{
 							flipScale();
 						}
+						Debug.Log("go");
 						rigidBody.AddForce(PUSHFORCE);
 					}
 					else if(Input.GetKeyDown(KeyCode.LeftArrow)) //move left
@@ -141,7 +142,7 @@ public class PlayerController : MonoBehaviour,ISpawnable {
 			}
 			if(hit[i].rigidbody != null)
 			{
-			    hit[i].rigidbody.AddForce(new Vector2(direction * 200.0f, 100.0f));
+			    hit[i].rigidbody.AddForce(new Vector2(direction * 800.0f, 100.0f));
 			}
 		}
 		//send objects/players upwards
