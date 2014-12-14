@@ -21,7 +21,7 @@ public class PlayerNetwork : Photon.MonoBehaviour {
 		{           
 			controllerScript.isControllable = false;
 			rigidbody2D.gravityScale = 0;
-		}
+		} 
 		
 		gameObject.name = gameObject.name + photonView.viewID;
 	}
