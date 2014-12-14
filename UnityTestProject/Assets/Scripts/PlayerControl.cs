@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerControl : MonoBehaviour
+public class PlayerControl : MonoBehaviour,ISpawnable
 {
 	[HideInInspector]
 	public bool facingRight = true;			// For determining which way the player is currently facing.
@@ -10,9 +10,9 @@ public class PlayerControl : MonoBehaviour
 
 
 	public float moveForce = 365f;			// Amount of force added to move the player left and right.
-	public float maxSpeed = 5f;				// The fastest the player can travel in the x axis.
+	public float maxSpeed = 20f;				// The fastest the player can travel in the x axis.
 	public AudioClip[] jumpClips;			// Array of clips for when the player jumps.
-	public float jumpForce = 1000f;			// Amount of force added when the player jumps.
+	public float jumpForce = 5000f;			// Amount of force added when the player jumps.
 	public AudioClip[] taunts;				// Array of clips for when the player taunts.
 	public float tauntProbability = 50f;	// Chance of a taunt happening.
 	public float tauntDelay = 1f;			// Delay for when the taunt should happen.
@@ -35,7 +35,9 @@ public class PlayerControl : MonoBehaviour
 	{
 		// The player is grounded if a linecast to the groundcheck position hits anything on the ground layer.
 		// grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));  
-		grounded = Physics2D.Raycast(transform.position,-Vector2.up,1 << 0);
+		Vector2 rayOffset = new Vector3(transform.position.x,transform.position.y - 1.5f,0f);
+		//Debug.DrawRay(rayOffset,-Vector2.up); //Ray for testing (to pick an offset where the ray doesnt hit the player)
+		grounded = Physics2D.Raycast(rayOffset,-Vector2.up,0.5f,1 << 0);
 		// If the jump button is pressed and the player is grounded then the player should jump.
 		if(Input.GetButtonDown("Jump") && grounded)
 			jump = true;
@@ -94,9 +96,11 @@ public class PlayerControl : MonoBehaviour
 		facingRight = !facingRight;
 
 		// Multiply the player's x local scale by -1.
+
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
+
 	}
 
 
@@ -123,6 +127,7 @@ public class PlayerControl : MonoBehaviour
 	}
 
 
+
 	int TauntRandom()
 	{
 		// Choose a random index of the taunts array.
@@ -136,4 +141,10 @@ public class PlayerControl : MonoBehaviour
 			// Otherwise return this index.
 			return i;
 	}
+	public void ReSpawn()
+	{
+		rigidbody2D.velocity = new Vector2(0.0f,0.0f);
+		transform.position = Vector3.zero;
+	}
+
 }

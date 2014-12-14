@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BallNetwork : Photon.MonoBehaviour {
+public class BallNetwork : Photon.MonoBehaviour,ISpawnable {
 
 	private Vector3 correctBallPos = Vector3.zero; //We lerp towards this
 	private Vector2 correctBallVel = Vector2.zero;
@@ -35,5 +35,10 @@ public class BallNetwork : Photon.MonoBehaviour {
 		{
 			transform.position = Vector3.Lerp(transform.position, correctBallPos, Time.deltaTime * 10);
 		}
+	}
+	//Just quickly adding so ball can respawn when it falls off the edge, move to other script if needed
+	public void ReSpawn()
+	{
+		transform.position = Vector3.zero;
 	}
 }

@@ -5,10 +5,10 @@ using UnityEngine.UI;
 public class goalPost : MonoBehaviour {
 	#region fields
 	public Text scoreSpot; //The Text GameObject
-	Collider2D groundCollider;
+	//Collider2D groundCollider;
 	uint score = 0;
 	const uint goalPoints = 1;
-	BoxCollider2D myCollider;
+	//BoxCollider2D myCollider;
 	Vector3 groundCenter;
 	#endregion
 	#region Monobehaviours
@@ -17,8 +17,8 @@ public class goalPost : MonoBehaviour {
 	{
 
 
-	   gameObject.AddComponent<BoxCollider2D>();
-		myCollider = gameObject.GetComponent<BoxCollider2D>() as BoxCollider2D;
+	   //gameObject.AddComponent<BoxCollider2D>();
+		//myCollider = gameObject.GetComponent<BoxCollider2D>() as BoxCollider2D;
 		//set up the collider so that it is in the back of the net, and a third of the nets width
 		//myCollider = gameObject.GetComponent<BoxCollider2D>() as BoxCollider2D;
 //		myCollider.center.Set(gameObject.transform.position.x/3.0f,gameObject.transform.position.y);
@@ -29,8 +29,8 @@ public class goalPost : MonoBehaviour {
 //		collider2D.bounds.size.Set(renderer.bounds.size.x/3,renderer.bounds.size.y,0);
 //		collider2D.bounds.SetMinMax(renderer.bounds.min,renderer.bounds.max);
 
-		groundCollider = GameObject.FindGameObjectWithTag("Ground").GetComponent<Collider2D>() as Collider2D; 
-		groundCenter = groundCollider.transform.position;
+		//groundCollider = GameObject.FindGameObjectWithTag("Ground").GetComponent<Collider2D>() as Collider2D; 
+		//groundCenter = groundCollider.transform.position;
 
 	}
 
@@ -40,8 +40,9 @@ public class goalPost : MonoBehaviour {
 		{
 			score += goalPoints;
 			scoreSpot.text = score.ToString();
-			col.transform.position = new Vector3(groundCenter.x,groundCenter.y + 5.0f, groundCenter.z);
+			//col.transform.position = new Vector3(groundCenter.x,groundCenter.y + 5.0f, groundCenter.z);
 
+			col.transform.position = new Vector3(0,groundCenter.y + 5.0f, 0);
 
 
 		}

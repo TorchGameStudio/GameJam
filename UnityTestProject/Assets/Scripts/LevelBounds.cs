@@ -10,12 +10,12 @@ public class LevelBounds : MonoBehaviour {
 		ISpawnable spawnalbe = (ISpawnable)collider.gameObject.GetComponent(typeof(ISpawnable));
 		if(spawnalbe != null)
 		{
-			spawnalbe.ReSpawn();
+			//spawnalbe.ReSpawn();
 			Debug.Log("Respawned");
 		}
 		else
 		{
-			Debug.Log("BOOM");
+			//Debug.Log("BOOM");
 			Destroy(collider.gameObject);
 		}
 
