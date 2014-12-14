@@ -40,5 +40,6 @@ public class BallNetwork : Photon.MonoBehaviour,ISpawnable {
 	public void ReSpawn()
 	{
 		transform.position = Vector3.zero;
+		rigidbody2D.velocity = Vector2.zero;
 	}
 }
