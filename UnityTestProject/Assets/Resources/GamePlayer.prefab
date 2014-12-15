@@ -42,7 +42,7 @@ Rigidbody2D:
   m_Mass: 2
   m_LinearDrag: 2
   m_AngularDrag: .0500000007
-  m_GravityScale: 8
+  m_GravityScale: 10
   m_FixedAngle: 0
   m_IsKinematic: 0
   m_Interpolate: 1
@@ -72,14 +72,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   facingRight: 1
   jump: 0
-  moveForce: 1500
+  moveForce: 1200
   maxSpeed: 30
   jumpClips: []
   attackClips: []
-  jumpForce: 20000
+  jumpForce: 6000
   taunts: []
   tauntProbability: 50
   tauntDelay: 1
+  isControllable: 1
 --- !u!114 &11429156
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -9,11 +9,11 @@ public class PlayerControl : MonoBehaviour,ISpawnable
 	public bool jump = false;				// Condition for whether the player should jump.
 
 
-	public float moveForce = 365f;			// Amount of force added to move the player left and right.
-	public float maxSpeed = 20f;				// The fastest the player can travel in the x axis.
+	public float moveForce = 1200f;			// Amount of force added to move the player left and right.
+	public float maxSpeed = 30f;				// The fastest the player can travel in the x axis.
 	public AudioClip[] jumpClips;			// Array of clips for when the player jumps.
 	public AudioClip[] attackClips;			// Array of clips for when the player attacks.
-	public float jumpForce = 5000f;			// Amount of force added when the player jumps.
+	public float jumpForce = 1200f;			// Amount of force added when the player jumps.
 	public AudioClip[] taunts;				// Array of clips for when the player taunts.
 	public float tauntProbability = 50f;	// Chance of a taunt happening.
 	public float tauntDelay = 1f;			// Delay for when the taunt should happen.
@@ -243,6 +243,10 @@ public class PlayerControl : MonoBehaviour,ISpawnable
 		}
 		StartCoroutine(Stunned(2.0f));
 	}
+	/// <summary>
+	/// Sets stunned variable to true for the specified time
+	/// </summary>
+	/// <param name="stunTime">Stun time in seconds.</param>
 	IEnumerator Stunned(float stunTime)
 	{
 		int dir;
@@ -255,14 +259,16 @@ public class PlayerControl : MonoBehaviour,ISpawnable
 			dir = -1;
 			
 		}
+		//Tyler Question: Won't this send the stunned player flying in the direction that he is facing and not that the attacking player is facing?
 		rigidbody2D.AddForce(new Vector2(dir * moveForce * 2, jumpForce * 0.5f));
-		Debug.Log("UNSTUNNED " + transform.gameObject.name);
+
 		isStunned = true;
 		while(isStunned)//loop incase we want to do stuff later
 		{
 			yield return new WaitForSeconds(stunTime);
 			isStunned = false;
 		}
+		Debug.Log("UNSTUNNED " + transform.gameObject.name);
 		
 	}
 
